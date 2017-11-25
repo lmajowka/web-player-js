@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Web Player js",
+  "description": "Very simple web player for lazy people like me",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+
+  "background" : {
+    "scripts" : ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["web_player.js"]
+    }
+  ],
+
+
+  
+  "browser_action": {
+    "default_title": "Very simple web player for lazy people like me",
+    "default_icon": "icon.png"
+  }
+}
+
+
+
+
